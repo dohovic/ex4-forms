@@ -1,0 +1,24 @@
+textarea::placeholder {
+    line-height: 47px;
+  }
+
+  textarea:focus::placeholder {
+    color: transparent;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  
+  ::-webkit-textarea-placeholder {
+    line-height: 47px;
+  }
+  
+  :-moz-placeholder {
+    line-height: 47px;
+  }
+
+  .input-group-text {
+      width: 70px;
+      justify-content: center;
+  }

@@ -7,13 +7,22 @@
 </head>
 <body>
     <?php
-        $user = $_GET["user"];
-        $pass = $_GET["pass"];
-
-        if ($user == "dan dohovic" && $pass == "111")
-            echo "<h2>Hi ". $user . "</h2>";
+        $pass = "Wallak357";
+        $passCheck = $_GET["passCheck"];
+        $user = $_GET["userName"];
+        $about = $_GET["about"];
+        $hidden = $_GET["hiddenInfo"];
+        if (trim($pass) == trim($passCheck)) {
+            echo "<h3>Hey ". $user . ", Your info is updated.</h3>";
+            echo "<h3>About: </h3><p>". $about ."</p>";
+            if ($_POST['hiddenInfo'] == 'hidden')
+                echo "<h3>Your about info will be hidden</h3>";
+            else
+                echo "<h4>Yout about info is public</h4>";
+            echo "<span>Update time: " . date("Y/m/d") . "</span>";
+        }
         else
-            echo "<h2>error</h2>"
+            echo "<h3>Can not verify password</h3>";
     ?>
 </body>
 </html>
