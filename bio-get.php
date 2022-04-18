@@ -19,7 +19,6 @@
                 echo "<h3>Your about info will be hidden</h3>";
             else
                 echo "<h4>Yout about info is public</h4>";
-            echo "<span>Update time: " . date("Y/m/d") . "</span>";
         }
         else
             echo "<h3>Can not verify password</h3>";
