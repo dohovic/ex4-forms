@@ -1,9 +1,4 @@
-window.onload = () => {
-    const submitButton = document.getElementById("submit-button");
-    submitButton.addEventListener("click", validate);
-}
-
-function validate(e) {
+function validateCheckBoxes() {
     var checkboxes = document.getElementsByName('interests[]');
     var checkedLength = 0;
     for(var i=0; i< checkboxes.length; i++) {
@@ -14,4 +9,5 @@ function validate(e) {
         alert("Please check at least 2 interests");
         return false;
     }
+    return true;
 }
